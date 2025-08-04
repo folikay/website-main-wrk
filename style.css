@@ -1116,17 +1116,34 @@
         margin-left: 45%;
     }
     
-     @media (max-width: 768px) {
-        .section12 h3 {
-            font-size: 0.5rem;
-        }
-        .section12 p {
-            font-size: small;
-            margin-left: 52%;
-        }
-        .section12 img {
-            margin-left: 33%;
-        }
-    }
+    @media (max-width: 768px) {
+       .section12 h3 {
+           font-size: 1rem;
+       }
+       .section12 p {
+           font-size: small;
+           margin-left: 52%;
+       }
+       .section12 img {
+           margin-left: 33%;
+       }
+   }
+   
+   @media (max-width: 475px) {
+       .section12 h3 {
+           font-size: 1rem;
+       }
+       .section12 p {
+           font-size: small;
+           margin-left: 45%;
+       }
+       .section12 img {
+           margin-left: 18%;
+       }
+       .section12 h6 {
+           margin-left: 36%;
+       }
+   }
+
 
 
