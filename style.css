@@ -230,11 +230,11 @@
    @media (max-width: 480px) {
        nav {
            top: 75px;
-           width: 84%;
+           width: 100%;
            position: relative;
        }
        .logo {
-           width: 84%;
+           width: 100%;
            padding: 20px;
        }
    }
@@ -1259,6 +1259,7 @@
            margin-left: 28%;
        }
    }
+
 
 
 
