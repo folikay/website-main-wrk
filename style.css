@@ -365,6 +365,7 @@
        .slide-content {
            position: absolute;
            bottom: 50px;
+         left: 10px;
        }
    }
    /*style for my third section*/
@@ -1258,6 +1259,7 @@
            margin-left: 28%;
        }
    }
+
 
 
 
