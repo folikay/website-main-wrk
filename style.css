@@ -332,7 +332,7 @@
     
     @media (max-width: 480px) {
         .slides {
-            height: 300px;
+            
         }
         .slide-content {
             padding: 10px;
@@ -1115,4 +1115,5 @@
         .section12 img {
             margin-left: 39%;
         }
+
     }
