@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>osafem</title>
+</head>
+
+<body style="overflow-x: hidden;">
+    <!--logo header-->
+
+    <section class="logo">
+        <div><img src="logo.jpg" alt="osafem" width="30wv" height="30hv"></div>
+        <div class="icon">
+            <a href=""><i class="fa-solid fa-phone-volume"></i></a></div>
+        <div class="icon1">
+            <button id="getLocationBtn" class="location-link">
+        <i class="fa-solid fa-location-dot"></i> 
+    </button>
+            <p id="locationOutput"></p>
+        </div>
+    </section>
+
+
+
+    <!--nav-bar icon ,search button and list-->
+
+
+    <section class="nav" style="position: fixed; top: 20; width: 100%; z-index: 1001;">
+        <nav>
+
+            <ul class="dropdown-menu">
+                <li class="hasdropdown"><a href="#">Home</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">go</a></li>
+                    </ul>
+                </li>
+                <li class="hasdropdown"><a href="#">Product</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">come</a></li>
+                    </ul>
+                </li>
+                <li class="hasdropdown"><a href="#">blog</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">stay</a></li>
+                    </ul>
+                </li>
+                <li class="hasdropdown"><a href="#">page</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">move</a></li>
+                    </ul>
+                </li>
+                <li class="hasdropdown"><a href="#">contact</a>
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">right</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="nav-icon">
+                <a href="https://www.facebook.com/oluwakunmifolakemi"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/2347019020420"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/oluwakunmifolakemi"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search..." required>
+                <div class="search-icon">
+                    <svg xmlns="http://www.facebook.com/oluwakunmi folakemi/" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                </div>
+            </div>
+
+
+            <!--comment for my media que...-->
+
+            <div class="call"> <a href=""><i class="fa-solid fa-phone-volume"></i></a></div>
+
+            <select class="nav-select" onchange="location = this.value;">
+        <option value="">Select an option</option>
+        <option value="#home">Home</option>
+        <option value="#about">About</option>
+        <option value="#services">Services</option>
+        <option value="#blog">Blog</option>
+        <option value="#projects">Projects</option>
+        <option value="#contact">contacts</option>
+
+        </select>
+        </nav>
+
+    </section>
+
+
+    <!--my slide section image and text-->
+
+    <section>
+        <div class="slideshow-container">
+            <div class="slides">
+                <!-- for my side-->
+                <div class="slide active">
+                    <img src="pix.jpg" alt="osafem">
+                    <div class="slide-content">
+                        <h1 class="slide-title"> my slide...</h1>
+                        <p class="slide-desc">my slide text</p>
+                        <P class="slide-text"> <i>this is my new page still working on it <br> this is my new page still working on it <br> dis is my new page still working on it <br> dis is my new page still working on it</i></P>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="pix3.jpg" alt="osafem">
+                    <div class="slide-content">
+                        <h1 class="slide-title"> my slide...</h1>
+                        <p class="slide-desc">my slide text</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="pix2'jpg.webp" alt="osafem">
+                    <div class="slide-content">
+                        <h1 class="slide-title"> my slide...</h1>
+                        <p class="slide-desc">my slide text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--comment for my third section display -->
+    <section>
+        <div class="section3-container">
+
+            <p class="p"> OUR AIM- PERFECT WORK</p>
+            <h1 class="section3">
+                SAFETY IS SUCCESS BY PURPOSE NOT ACCIDENT
+                <hr>
+            </h1>
+
+            <p class="p">Never think working safe is in vain when it could save a life time pain</p>
+        </div>
+
+    </section>
+
+    <!--comment for my fourth section display -->
+    <section>
+        <div class="section4-container">
+            <div class="grids">
+                <div class="grid1">
+                    <h3 class="myfirsth3"><u>industrial ideas</u></h3>
+                    <p><i class="fa-solid fa-lightbulb"></i>ignoring a warning can <br> cause much mourning</p>
+                </div>
+
+                <div class="grid1">
+                    <h3 class="myfirsth3"><u>Modern Equipment</u>
+
+                    </h3>
+                    <p><i class="fa-solid fa-truck-moving"></i>Life did not begin by accident.<br> don't end it as one</p>
+
+                </div>
+                <div class="grid1">
+                    </i>
+                    <h3 class="myfirsth3">
+                        <u> Expert Enginners</u></h3>
+                    <p><i class="fa-solid fa-hard-hat"></i> if you're going to be stupid, <br>you have to be tough </p>
+                </div>
+                <div class="grid1">
+                    <h3 class="myfirsth3"><u>Projects Support</u></h3>
+                    <p><i class="fa-solid fa-history"></i>make your plant the best, <br> safer than all the rest</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--comment for my 5th section display -->
+    <section class="section5">
+        <div class="section5icon"><img src="logo.jpg" alt="osafem" width="100wv" height="100hv">
+            <p>our Mission</p>
+            <h1> industrial Engineering, Engineering <br> dealing with the optimization of complex <br> industrial processes or <br> systems</h1>
+            <h4>safety record don't happen by accident</h4>
+        </div>
+
+    </section>
+
+    <!--comment for my 6th section display -->
+
+    <section class="section6-container">
+        <div class="grid2">
+            <div>
+                <div class="counter" id="counter1">0</div>
+                <p>Awards winning</p>
+            </div>
+            <div>
+                <div class="counter" id="counter2">0</div>
+                <p>Years of experience</p>
+            </div>
+
+            <div>
+                <div class="counter" id="counter3">0</div>
+                <p>project done</p>
+            </div>
+            <div>
+                <div class="counter" id="counter4">0</div>
+                <p>modern systems</p>
+            </div>
+        </div>
+
+        <div class="counter55">
+            <div class="counter5" id="counter5">0</div>
+            <p>expert workers</p>
+        </div>
+
+    </section>
+
+
+    <!--comment for my 7th section display -->
+
+    <section class="section7">
+        <div class="section7icon"><img src="logo.jpg" alt="osafem" width="100wv" height="100hv"></div>
+        <h4> follow traffic rules-save your future</h4>
+        <div class="section7extra">
+            <h1>About our
+                <i>industrial company</i>
+            </h1>
+        </div>
+        <p>We are truly your 'one source' and it's our job to get you on operational and back on-line fast. our list <br> of services is comprehensive, and it features:</p>
+
+        <div class="grids1">
+            <div class="grid3">
+                <h3 class="secondh3">Construction</h3>
+                <p><i class="fa-solid fa-lightbulb"></i>Expert & modern systems</p>
+            </div>
+
+            <div class="grid3">
+                <h3 class="secondh3">Machinery
+
+                </h3>
+                <p><i class="fa-solid fa-truck-moving"></i>Equipment relocation</p>
+
+            </div>
+            <div class="grid3">
+                </i>
+                <h3 class="secondh3">
+                    Predictive</h3>
+                <p><i class="fa-solid fa-hard-hat"></i> Asset optimization</p>
+            </div>
+
+            <div class="grid3">
+                <h3 class="secondh3">Electrical service</h3>
+                <p><i class="fa-solid fa-history"></i>Electrical supply store</p>
+            </div>
+
+            <div class="grid3">
+                </i>
+                <h3 class="secondh3">
+                    Weld, Fabrication</h3>
+                <p><i class="fa-solid fa-hard-hat"></i> Machine shop work</p>
+            </div>
+
+            <div class="grid3">
+                </i>
+                <h3 class="secondh3">
+                    HVAC Technicians</h3>
+                <p><i class="fa-solid fa-hard-hat"></i> Have largest Network</p>
+            </div>
+
+            <div class="grid3">
+                </i>
+                <h3 class="secondh3">
+                    Environmental</h3>
+                <p><i class="fa-solid fa-hard-hat"></i> Waste management</p>
+            </div>
+
+            <div class="grid3">
+                </i>
+                <h3 class="secondh3">
+                    Engineering</h3>
+                <p><i class="fa-solid fa-hard-hat"></i>Cognizant technology</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--comment for my 8th section display -->
+    <section class="section8">
+
+        <div class="section7icon"><img src="logo.jpg" alt="osafem" width="100wv" height="100hv"></div>
+        <h3><b>Jack Cage</b>- Engineer</h3>
+        <h1> Dare to<b> Be Aware</b></h1>
+        <p>Beacause no plant can affoerd an inefficient operation or unplanned downtime, osamfem Lmited focuses on keeping your operation running at peak performance</p>
+        <div class="img">
+            <img src="project.jpg" alt="osamfem" width="500px" height="350px">
+        </div>
+    </section>
+
+
+    <!--comment for my 9th section display -->
+
+    <section class="section9">
+        <div class="section7icon"><img src="logo.jpg" alt="osafem" width="100wv" height="100hv">
+        </div>
+        <p> Have another day - By being safe today</p>
+        <h1>A <b> Good Quality</b> is Not Accidental</h1>
+
+        <div class="grids9">
+            <div class="grid9"> <i class="fa-solid fa-lightbulb"></i>
+                <h2>Industrial <br> Factories</h2>
+                <p>wear an approved bike helment when you go bike riding</p>
+                <h4><a href="#">Learn More &rarr;</a></h4>
+            </div>
+            <div class="grid9"><i class="fa-solid fa-lightbulb"></i>
+                <h2>Experienced <br> workers</h2>
+                <p>The door to safety swings on hinges of common sense</p>
+                <h4><a href="#">Learn More &rarr;</a></h4>
+            </div>
+            <div class="grid9"><i class="fa-solid fa-lightbulb"></i>
+                <h2>Industrial <br> Networking</h2>
+                <p>You get what you inspect, not what you expect in system</p>
+                <h4><a href="#">Learn More &rarr;</a></h4>
+            </div>
+        </div>
+    </section>
+
+    <!--comment for my 10th section display -->
+
+    <section class="section10">
+
+        <h2><i class="fa-solid fa-envelope-open-text"></i> Get A <b>Free Quote</b> for Your Project</h2>
+        <p> feel free to contact us and get a free quote</p>
+        <div class="section10icon">
+            <h4><a href="#"><i class="fa-solid fa-phone-volume"></i>contact us now</a></h4>
+        </div>
+
+        <div class="section10-container">
+            <div class="img-container">
+                <div class="click-zones" onclick="handleImageClick(event)">
+                    <div class="img1">
+                        <img src="halmet.jpg" id="image" alt="osafem" width="500wv" height="400hv">
+                    </div>
+                </div>
+            </div>
+
+            <!-- js, css, html dropdown -->
+
+
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--  dropdown for css and html -->
+
+            <!--
+        <div class="accordion-container">
+            <details>
+                <summary>Getting Started Guide</summary>
+                <hr>
+                <br>
+                <div class="content">
+                    <p>Welcome to our platform! Here's how to begin:</p>
+
+                </div>
+            </details>
+
+            <details>
+                <summary>Getting Started Guide</summary>
+                <hr>
+                <br>
+                <div class="content">
+                    <p>Welcome to our platform! Here's how to begin:</p>
+
+                </div>
+            </details>
+
+            <details>
+                <summary>Getting Started Guide</summary>
+                <hr>
+                <br>
+                <div class="content">
+                    <p>Welcome to our platform! Here's how to begin:</p>
+
+                </div>
+            </details>
+
+            <details>
+                <summary>Getting Started Guide</summary>
+                <hr>
+                <br>
+                <div class="content">
+                    <p>Welcome to our platform! Here's how to begin:</p>
+
+                </div>
+            </details>
+
+        </div>-->
+
+        </div>
+
+    </section>
+
+    <!--comment for my 11th section display  and for my update section-->
+
+    <section class="section11">
+        <div class="section7icon"><img src="logo.jpg" alt="osafem" width="100wv" height="100hv">
+            <p> check out our news and updates</p>
+            <h1>Latest News and Updates</h1>
+        </div>
+
+
+
+        <div class="grids11-container">
+
+            <div class="grid11">
+                <a href="https://www.prospects.ac.uk/job-profiles/site-engineer" target="_blank">
+                    <img src="grid2.jpg" alt="osafem">
+                    <div class="icon11"><i class="fa-solid fa-link"></i></div>
+                    <div class="grid11-overlay">
+                        <h4 class="gallery-title">How To Be Head <br> Of Stock Changes</h4>
+                    </div>
+                </a>
+                <p>may 5 2025</p>
+            </div>
+
+            <div class="grid11">
+                <a href="https://www.indeed.com/career-advice/career-development/construction-daily-report" target="_blank">
+                    <img src="gride1.jpg" alt="osafem">
+                    <div class="icon11"><i class="fa-solid fa-link"></i></div>
+                    <div class="grid11-overlay">
+                        <h4 class="gallery-title">Tips To Move Your <br> Business More Forward</h4>
+                    </div>
+                </a>
+                <p>June 12 2025</p>
+            </div>
+
+            <div class="grid11">
+                <a href="https://med.stanford.edu/medfacilities/projects/project-delivery-process.html" target="_blank">
+                    <img src="gride3.jpg" alt="osafem">
+                    <div class="icon11"><i class="fa-solid fa-link"></i></div>
+                    <div class="grid11-overlay">
+                        <h4 class="gallery-title">Online Reputation
+                            <br>And Management</h4>
+                    </div>
+                </a>
+                <p>Aug 12 2025</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--section 12 display style-->
+
+
+    <section class="section12">
+        <div class="section12-container">
+            <div id="slides">
+
+                <div class="main-slide">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h3>I just make a public announcement here at the office that if there was such an award for <br> vendor of the year, you would receive it. We would all vote for you. Very demanding <br> HUGE customer and you have just gone above and beyond.</h3>
+                    <img src="section12.jpeg" alt="osafem">
+                    <p>Steven San</p>
+                    <h6>Businessman</h6>
+                </div>
+                <div class="main-slide">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h3>I just make a public announcement here at the office that if there was such an award for <br> vendor of the year, you would receive it. We would all vote for you. Very demanding <br> HUGE customer and you have just gone above and beyond.</h3>
+                    <img src="section12.jpeg" alt="osafem">
+                    <p>Steven San</p>
+                    <h6>Businessman</h6>
+                </div>
+
+            </div>
+            <button class="control left" onclick="moveSlide(-1)">❮</button>
+            <button class="control right" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+
+</body>
+
+
+<script>
+    //map location 
+
+    // smooth slide for section12 with pointer
+    let currentSlide = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = document.querySelectorAll('.main-slide').length;
+
+    function moveSlide(direction) {
+        currentSlide += direction;
+
+        // Loop around slides
+        if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        }
+
+        // Calculate the offset for the slide
+        const offset = -currentSlide * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+    }
+    // Initialize the slider
+    document.addEventListener('DOMContentLoaded', function() {
+        slides.style.transform = 'translateX(0%)';
+    });
+
+
+
+
+
+    //Optional: You can add JavaScript to handle the select dropdown change
+    const select = document.querySelector('.nav-select');
+    select.addEventListener('change', function() {
+        if (this.value) {
+            window.location.href = this.value;
+        }
+    });
+
+    //for my search button
+
+    document.querySelector('.search-input').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const query = this.value.trim();
+            if (query) {
+                console.log('Searching for:', query);
+                alert(`Searching for: ${query}`);
+            }
+        }
+    })
+
+    //for my slide
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.slide');
+        const slidesContainer = document.querySelector('.slides');
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        const slideDuration = 5000;
+
+        function showNextSlide() {
+
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            slides[currentIndex].classList.add('active');
+        }
+        let slideInterval = setInterval(showNextSlide, slideDuration);
+
+
+    });
+
+    //section 6 my grid counter
+
+
+
+    function createCounter(elementId, target) {
+        let count = 1;
+        const counterElement = document.getElementById(elementId);
+
+        const interval = setInterval(() => {
+            if (count <= target) {
+                counterElement.textContent = count;
+                count++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 100);
+    }
+
+    createCounter('counter1', 90);
+    createCounter('counter2', 50);
+    createCounter('counter3', 40);
+    createCounter('counter4', 54);
+    createCounter('counter5', 58);
+
+    function createCounter(elementId, target) {
+        let count = 1;
+        const counterElement = document.getElementById(elementId);
+        const speed = Math.max(1000 / target, 20);
+
+        const interval = setInterval(() => {
+            if (count <= target) {
+                counterElement.textContent = '+' + count;
+                count++;
+            } else {
+                clearInterval(interval);
+            }
+        }, speed);
+    }
+
+
+    setTimeout(() => createCounter('counter1', 90), 0);
+    setTimeout(() => createCounter('counter2', 50), 300);
+    setTimeout(() => createCounter('counter3', 40), 600);
+    setTimeout(() => createCounter('counter4', 54), 900);
+    setTimeout(() => createCounter('counter5', 58), 1200);
+
+    //js accordion dropdown 
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all accordion headers
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        // Add click event listeners to each header
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const accordionItem = this.parentElement;
+                const accordionContent = this.nextElementSibling;
+                const accordionIcon = this.querySelector('.accordion-icon');
+
+                // Toggle the active class
+                accordionItem.classList.toggle('active');
+
+                // Toggle the content visibility with smooth animation and chnager of headr color
+                if (accordionItem.classList.contains('active')) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                    accordionContent.style.color = 'red';
+                    accordionIcon.textContent = '-';
+                    accordionIcon.style.color = '#6c5ce7';
+
+                    // change bacground color when click
+
+                    accordionItem.style.backgroundColor = '#333';
+
+                } else {
+                    accordionContent.style.maxHeight = '0';
+                    accordionIcon.textContent = '+';
+                    accordionIcon.style.color = '';
+
+                    // change bacground color back to original color
+
+                    accordionItem.style.backgroundColor = '';
+                }
+
+
+
+                // Close other open accordion items
+                if (accordionItem.classList.contains('active')) {
+                    document.querySelectorAll('.accordion-item').forEach(item => {
+                        if (item !== accordionItem && item.classList.contains('active')) {
+                            item.classList.remove('active');
+                            item.querySelector('.accordion-content').style.maxHeight = '0';
+                            item.querySelector('.accordion-icon').textContent = '+';
+                            item.querySelector('.accordion-icon').style.color = '';
+                            // change bacground color back to original color
+                            item.style.backgroundColor = '';
+                        }
+                    });
+                }
+            });
+        });
+    });
+
+    // js for image flip slant
+    function handleImageClick(event) {
+        const image = document.getElementById('image');
+        const rect = event.currentTarget.getBoundingClientRect();
+        const clickX = event.clientX - rect.left;
+
+
+        image.className = 'img1';
+
+        if (clickX < rect.width / 2) {
+
+            image.classList.add('slant-left');
+        } else {
+
+            image.classList.add('slant-right');
+        }
+    }
+
+    // Optional: For my grid11
+
+    document.querySelectorAll('.grid11').forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            const title = item.querySelector('.gallery-title');
+            title.style.color = '#ff7b54'; // Change the hover color
+        });
+        item.addEventListener('mouseleave', () => {
+            const title = item.querySelector('.gallery-title');
+            title.style.color = ''; // Reset to CSS value
+        });
+    });
+</script>
+
+</html>
