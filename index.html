@@ -88,19 +88,19 @@
 
 
             <!--comment for my media que...-->
+            <div class="link-container">
+                <div class="call"> <a href=""><i class="fa-solid fa-phone-volume"></i></a></div>
 
-            <div class="call"> <a href=""><i class="fa-solid fa-phone-volume"></i></a></div>
 
-            <select class="nav-select" onchange="location = this.value;">
-        <option value="">Select an option</option>
-        <option value="#home">Home</option>
-        <option value="#about">About</option>
-        <option value="#services">Services</option>
-        <option value="#blog">Blog</option>
-        <option value="#projects">Projects</option>
-        <option value="#contact">contacts</option>
 
-        </select>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
 
     </section>
@@ -297,7 +297,7 @@
     <!--comment for my 8th section display -->
     <section class="section8">
 
-        <div class="section7icon"><img src="logo.jpg" alt="osafem" width="90vw" height="90vh"></div>
+        <div class="section8icon"><img src="logo.jpg" alt="osafem" width="80vw" height="90vh"></div>
         <h3><b>Jack Cage</b>- Engineer</h3>
         <h1> Dare to<b> Be Aware</b></h1>
         <p>Beacause no plant can affoerd an inefficient operation or unplanned downtime, osamfem Lmited focuses on keeping your operation running at peak performance</p>
@@ -586,11 +586,11 @@
 
 
     //Optional: You can add JavaScript to handle the select dropdown change
-    const select = document.querySelector('.nav-select');
-    select.addEventListener('change', function() {
-        if (this.value) {
-            window.location.href = this.value;
-        }
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
 
     //for my search button
