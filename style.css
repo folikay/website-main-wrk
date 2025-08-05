@@ -270,11 +270,11 @@
    @media (max-width: 480px) {
        nav {
            top: 75px;
-           width: 98%;
+           width: 99%;
            position: relative;
        }
        .logo {
-           width: 98%;
+           width: 99%;
            padding: 20px;
        }
        .hamburger {
@@ -1315,6 +1315,7 @@
            margin-left: 28%;
        }
    }
+
 
 
 
