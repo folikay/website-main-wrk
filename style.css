@@ -236,7 +236,7 @@
        display: none;
        font-size: 24px;
        cursor: pointer;
-          color:white;
+       color: white;
    }
    
    @media (max-width: 768px) {
@@ -270,11 +270,11 @@
    @media (max-width: 480px) {
        nav {
            top: 75px;
-           width: 99%;
+           width: 98%;
            position: relative;
        }
        .logo {
-           width: 99%;
+           width: 98%;
            padding: 20px;
        }
        .hamburger {
@@ -1107,11 +1107,12 @@
    .grid11 p {
        color: white;
        text-align: center;
+       margin-top: -8px;
    }
    
    .icon11 {
        position: absolute;
-       bottom: 300px;
+       bottom: 30vh;
        left: 50%;
        transform: translateX(-50%);
        color: white;
@@ -1205,9 +1206,21 @@
        .grids11-container {
            flex-direction: column;
            justify-self: center;
-           width: 50%;
-           height: 50%;
-           margin-right: 250px;
+           width: 100%;
+           margin: 0 auto;
+       }
+       .grid11 {
+           width: 90%;
+           height: auto;
+           max-width: 300px;
+           margin: 0 auto;
+       }
+       .grid11 img {
+           height: auto;
+           max-height: 300px;
+       }
+       .icon11 {
+           bottom: 20vh;
        }
    }
    /* section 11 style.....*/
@@ -1315,16 +1328,3 @@
            margin-left: 28%;
        }
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
