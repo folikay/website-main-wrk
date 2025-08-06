@@ -691,7 +691,7 @@
                 // Toggle the content visibility with smooth animation and chnager of headr color
                 if (accordionItem.classList.contains('active')) {
                     accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-                    accordionContent.style.color = 'white';
+                    accordionContent.style.color = 'red';
                     accordionIcon.textContent = '-';
                     accordionIcon.style.color = '#6c5ce7';
 
@@ -751,7 +751,7 @@
     document.querySelectorAll('.grid11').forEach(item => {
         item.addEventListener('mouseenter', () => {
             const title = item.querySelector('.gallery-title');
-            title.style.color = '#ff7b54'; // Change the hover color
+            title.style.color = 'white'; // Change the hover color
         });
         item.addEventListener('mouseleave', () => {
             const title = item.querySelector('.gallery-title');
@@ -761,4 +761,5 @@
 </script>
 
 </html>
+
 
