@@ -106,7 +106,7 @@
     </section>
 
 
-    <!--my slide section image and text-->
+    <!--my slide section 2 image and text-->
 
     <section>
         <div class="slideshow-container">
@@ -551,41 +551,110 @@
         </div>
     </section>
 
+
+
+    <!--section 13 slide for icon-->
+
+    <section class="section13">
+
+        <div class="slides13">
+            <!-- for my side-->
+
+            <div class="minislide-container">
+
+                <div class="minislide1-container">
+                    <i class="fas fa-globe"></i>
+                    <h3> GLOBAL MARKETING</h3>
+                    <p></p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3> SOLUTIONS
+                    </h3>
+                    <p>slogan goes here</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-cube"></i>
+                    <h3> DIRECT MARKETING</h3>
+                    <p>email marketing</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-industry"></i>
+                    <h3> INDUSTRY
+                    </h3>
+                    <p>factory industry</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fa-solid fa-sliders"></i>
+                    <h3> MEDIAINFINI
+                    </h3>
+                    <p>slogan goes here</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-ship"></i>
+                    <h3> CHAIN FACTORY</h3>
+                    <p>your headline here</p>
+                </div>
+
+            </div>
+            <div class="slider-content clone">
+                <div class="minislide1-container">
+                    <i class="fas fa-globe"></i>
+                    <h3> GLOBAL MARKETING</h3>
+                    <p></p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3> SOLUTIONS
+                    </h3>
+                    <p>slogan goes here</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-cube"></i>
+                    <h3> DIRECT MARKETING</h3>
+                    <p>email marketing</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-industry"></i>
+                    <h3> INDUSTRY
+                    </h3>
+                    <p>factory industry</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fa-solid fa-sliders"></i>
+                    <h3> MEDIAINFINI
+                    </h3>
+                    <p>slogan goes here</p>
+                </div>
+                <div class="minislide1-container">
+                    <i class="fas fa-ship"></i>
+                    <h3> CHAIN FACTORY</h3>
+                    <p>your headline here</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 </body>
 
 
 <script>
     //map location 
 
-    // smooth slide for section12 with pointer
-    let currentSlide = 0;
-    const slides = document.getElementById('slides');
-    const totalSlides = document.querySelectorAll('.main-slide').length;
-
-    function moveSlide(direction) {
-        currentSlide += direction;
-
-        // Loop around slides
-        if (currentSlide < 0) {
-            currentSlide = totalSlides - 1;
-        } else if (currentSlide >= totalSlides) {
-            currentSlide = 0;
-        }
-
-        // Calculate the offset for the slide
-        const offset = -currentSlide * 100;
-        slides.style.transform = `translateX(${offset}%)`;
-    }
-    // Initialize the slider
+    // js for ......section 13......
     document.addEventListener('DOMContentLoaded', function() {
-        slides.style.transform = 'translateX(0%)';
+        const sliderContainer = document.querySelector('.minislide-container');
+        const itemCount = sliderContainer.querySelectorAll('.minislide1-container').length;
+
+        const duration = itemCount * 7;
+        sliderContainer.style.animationDuration = `${duration}s`;
     });
 
 
 
 
-
-    //Optional: You can add JavaScript to handle the select dropdown change
+    //Optional: You can add JavaScript to handle the select dropdown change ...section 1...
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
 
@@ -605,7 +674,7 @@
         }
     })
 
-    //for my slide
+    //for my slide..... section 2.....
 
     document.addEventListener('DOMContentLoaded', function() {
         const slides = document.querySelectorAll('.slide');
@@ -626,7 +695,7 @@
 
     });
 
-    //section 6 my grid counter
+    //.....section 6...... my grid counter
 
 
 
@@ -672,7 +741,7 @@
     setTimeout(() => createCounter('counter4', 54), 900);
     setTimeout(() => createCounter('counter5', 58), 1200);
 
-    //js accordion dropdown 
+    //js accordion dropdown .... section 10.....
 
     document.addEventListener('DOMContentLoaded', function() {
         // Get all accordion headers
@@ -691,7 +760,7 @@
                 // Toggle the content visibility with smooth animation and chnager of headr color
                 if (accordionItem.classList.contains('active')) {
                     accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-                    accordionContent.style.color = 'red';
+                    accordionContent.style.color = 'white';
                     accordionIcon.textContent = '-';
                     accordionIcon.style.color = '#6c5ce7';
 
@@ -728,7 +797,7 @@
         });
     });
 
-    // js for image flip slant
+    // js for image flip slant .......setion 10....
     function handleImageClick(event) {
         const image = document.getElementById('image');
         const rect = event.currentTarget.getBoundingClientRect();
@@ -746,20 +815,44 @@
         }
     }
 
-    // Optional: For my grid11
+    // Optional: For my grid11 .......section11....
 
     document.querySelectorAll('.grid11').forEach(item => {
         item.addEventListener('mouseenter', () => {
             const title = item.querySelector('.gallery-title');
-            title.style.color = 'white'; // Change the hover color
+            title.style.color = 'white';
         });
         item.addEventListener('mouseleave', () => {
             const title = item.querySelector('.gallery-title');
-            title.style.color = ''; // Reset to CSS value
+            title.style.color = '';
         });
+    });
+
+
+
+    // smooth slide for...... section12..... with pointer
+    let currentSlide = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = document.querySelectorAll('.main-slide').length;
+
+    function moveSlide(direction) {
+        currentSlide += direction;
+
+        // Loop around slides
+        if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        }
+
+        // Calculate the offset for the slide
+        const offset = -currentSlide * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+    }
+    // Initialize the slider
+    document.addEventListener('DOMContentLoaded', function() {
+        slides.style.transform = 'translateX(0%)';
     });
 </script>
 
 </html>
-
-
