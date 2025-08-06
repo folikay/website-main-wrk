@@ -1326,5 +1326,79 @@
        }
        .section12 h6 {
            margin-left: 28%;
+
+            /* style for section 13 */
+   
+   .section13 {
+       background-color: rgb(57, 33, 33);
+       padding: 50px;
+   }
+   
+   .section13 i {
+       color: white;
+       font-size: 4rem;
+   }
+   
+   .section13 h3 {
+       color: white;
+       font-size: 1rem;
+       margin-left: 80px;
+       margin-top: -60px;
+   }
+   
+   .section13 p {
+       margin-left: 80px;
+       color: white;
+       font-size: smaller;
+   }
+   
+   .minislide-container {
+       display: flex;
+       flex-wrap: nowrap;
+       justify-content: flex-start;
+       gap: 40px;
+       animation: slideAnimation 30s infinite linear;
+       animation-play-state: running;
+   }
+   
+   .minislide1-container {
+       transition: transform 0.5s ease, opacity 0.5s ease;
+       ;
+       transform-origin: center center;
+       opacity: 1;
+   }
+   
+   .minislide1-container:hover {
+       transform: scale(1.05);
+       z-index: 1;
+   }
+   
+   .minislide1-conatiner {
+       transition: all 0.3s ease;
+   }
+   
+   .minislide1-container.fade-out {
+       opacity: 0;
+   }
+   
+   .slider-content {
+       display: flex;
+   }
+   
+   .slider-content.clone {
+       position: absolute;
+       left: 100%;
+       top: 0;
+   }
+   
+   @keyframes slideAnimation {
+       0% {
+           transform: translateX(0);
+       }
+       100% {
+           transform: translateX(-100%);
+       }
+   }   
        }
    }
+
