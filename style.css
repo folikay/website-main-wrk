@@ -1,4 +1,4 @@
- * {
+* {
        margin: 0;
        box-sizing: border-box;
    }
@@ -1326,8 +1326,9 @@
        }
        .section12 h6 {
            margin-left: 28%;
-
-            /* style for section 13 */
+       }
+   }
+   /* style for section 13 */
    
    .section13 {
        background-color: rgb(57, 33, 33);
@@ -1398,7 +1399,7 @@
        100% {
            transform: translateX(-100%);
        }
-   }   
-       }
    }
+   }
+
 
