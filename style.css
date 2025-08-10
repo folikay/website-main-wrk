@@ -270,6 +270,9 @@
    }
    
    @media (max-width: 768px) {
+     body {
+        font-size: 14px; 
+    }
        .dropdown-menu {
            display: none;
        }
@@ -284,8 +287,8 @@
            margin-top: 10px;
        }
        nav {
-           top: 75px;
-           width: 98%;
+           top: 70px;
+           width: 95%;
            position: relative;
        }
        .logo {
@@ -637,8 +640,14 @@
            grid-template-columns: repeat(1, 1fr);
            font-size: small;
        }
-   }
-   
+   } .section3-container, .section4-container, .section5 {
+        padding: 20px; 
+    } .grids {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .grid1 {
+        margin-bottom: 20px;
+    }
    @media (max-width: 480px) {
        .section7 h4 {
            font-size: small;
@@ -697,7 +706,11 @@
        width: 500px;
        height: 300px;
    }
-   
+@media (max-width: 768px) {
+    .section8 img {
+        width: 100%; 
+        height: auto;
+    }}
    @media (max-width: 480px) {
        .img {
            width: 250px;
@@ -803,7 +816,10 @@
        .grids9 {
            grid-template-columns: repeat(1, 1fr);
            justify-self: center;
-       }
+       } .section9 {
+        padding: 20px; 
+    }
+   
    }
    
    @media (max-width: 475px) {
@@ -940,7 +956,7 @@
        margin-top: 30px;
        margin-right: 60px;
    }
-   
+
    @media (max-width: 475px) {
        .section10 i {
            padding: 5px;
@@ -1243,7 +1259,10 @@
        .grids11-container {
            flex-direction: column;
            justify-self: center;
-       }
+       }.grid11 {
+        width: 100%; 
+        height: auto;
+    }
    }
    
    @media (max-width: 475px) {
@@ -1353,8 +1372,9 @@
            margin-left: 52%;
        }
        .section12 img {
-           margin-left: 33%;
-       }
+        width: 100%; 
+        height: auto; 
+    }
    }
    
    @media (max-width: 475px) {
@@ -1600,7 +1620,8 @@
            margin-bottom: 20px;
        }
        .section14 img {
-           display: none;
+           display: none;  width: 100vw;
+        height: auto;
        }
        .sectionsection {
            background-color: black;
@@ -2071,3 +2092,4 @@
            bottom: 80px;
        }
    }
+
