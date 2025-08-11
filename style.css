@@ -446,15 +446,33 @@
        z-index: 1;
    }
    
-   @media (max-width: 480px) {
+   @media (max-width: 992px) {
        .slideshow-container {
-           position: relative;
-           width: 100%;
+           height: 50vh;
+       }
+   }
+   
+   @media (max-width: 475px) {
+       .slideshow-container {
+           height: 40vh;
+       }
+   }
+   /* Media queries for portrait and landscape orientations */
+   
+   @media (orientation: portrait) {
+       .slideshow-container {
            height: 50vh;
        }
        .slide-content {
            position: absolute;
-           bottom: 50px;
+           bottom: 20px;
+           font-size: large;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .slideshow-container {
+           height: 70vh;
        }
    }
    /*style for my third section*/
@@ -2092,4 +2110,5 @@
            bottom: 80px;
        }
    }
+
 
