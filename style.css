@@ -736,7 +736,7 @@
    .grids1 {
        display: grid;
        grid-template-columns: repeat(2, 2fr);
-       gap: 10px;
+       gap: 50px;
        text-align: start;
        justify-self: start;
        margin-left: 0;
@@ -2268,6 +2268,7 @@
            bottom: 80px;
        }
    }
+
 
 
 
