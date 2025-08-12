@@ -270,9 +270,6 @@
    }
    
    @media (max-width: 768px) {
-     body {
-        font-size: 14px; 
-    }
        .dropdown-menu {
            display: none;
        }
@@ -287,8 +284,8 @@
            margin-top: 10px;
        }
        nav {
-           top: 70px;
-           width: 95%;
+           top: 75px;
+           width: 98%;
            position: relative;
        }
        .logo {
@@ -332,7 +329,7 @@
    
    .slideshow-container {
        position: relative;
-       width: 100%;
+       max-width: 100%;
        height: 80vh;
        overflow: hidden;
        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -445,6 +442,29 @@
    .slide.active {
        z-index: 1;
    }
+   /*@media (max-width: 480px) {
+       .slideshow-container {
+           position: relative;
+           width: 100%;
+           height: 50vh;
+       }
+       .slide-content {
+           position: absolute;
+           bottom: 50px;
+       }
+   }
+   
+   @media (max-width: 960px) {
+       .slideshow-container {
+           position: relative;
+           width: 100%;
+           height: 70vh;
+       }
+       .slide-content {
+           position: absolute;
+           bottom: 50px;
+       }
+   }*/
    
    @media (max-width: 992px) {
        .slideshow-container {
@@ -472,7 +492,12 @@
    
    @media (orientation: landscape) {
        .slideshow-container {
-           height: 70vh;
+           height: 90vh;
+       }
+       .slide-content {
+           position: absolute;
+           bottom: 50px;
+           font-size: x-large;
        }
    }
    /*style for my third section*/
@@ -499,6 +524,43 @@
        max-width: 50px;
        border: none;
        border-top: 2px solid rgb(176, 164, 164);
+   }
+   
+   @media (max-width: 992px) {
+       .section3 {
+           font-size: x-large;
+       }
+       .p {
+           font-size: large;
+       }
+   }
+   
+   @media (max-width: 475px) {
+       .section3 {
+           font-size: large;
+       }
+       .p {
+           font-size: small;
+       }
+   }
+   /* Media queries for portrait and landscape orientations */
+   
+   @media (orientation: portrait) {
+       .section3 {
+           font-size: large;
+       }
+       .p {
+           font-size: small;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .section3 {
+           font-size: x-large;
+       }
+       .p {
+           font-size: large;
+       }
    }
    /*style for my fourth section*/
    
@@ -537,6 +599,18 @@
        color: yellow;
        transform: rotateY(180deg);
    }
+   
+   @media (orientation: portrait) {
+       .grids p {
+           font-size: small;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .grids p {
+           font-size: large;
+       }
+   }
    /*section 5 style*/
    
    .section5icon p {
@@ -558,6 +632,22 @@
        padding: 50px;
        justify-content: center;
        text-align: center;
+   }
+   
+   @media (orientation: portrait) {
+       .section5 p,
+       h1,
+       h4 {
+           font-size: small;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .section5 p,
+       h1,
+       h4 {
+           font-size: large;
+       }
    }
    /*section 6 style */
    
@@ -593,6 +683,24 @@
    .grid2 p {
        text-align: center;
        color: rgb(153, 142, 142);
+   }
+   
+   @media (orientation: portrait) {
+       .counter55 {
+           font-size: small;
+       }
+       .grid2 {
+           font-size: small;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .grid2 {
+           font-size: large;
+       }
+       .counter55 {
+           font-size: large;
+       }
    }
    /*section 7th style*/
    
@@ -658,14 +766,8 @@
            grid-template-columns: repeat(1, 1fr);
            font-size: small;
        }
-   } .section3-container, .section4-container, .section5 {
-        padding: 20px; 
-    } .grids {
-        grid-template-columns: repeat(1, 1fr); 
-    }
-    .grid1 {
-        margin-bottom: 20px;
-    }
+   }
+   
    @media (max-width: 480px) {
        .section7 h4 {
            font-size: small;
@@ -684,11 +786,45 @@
            font-size: small;
        }
    }
+   
+   @media (orientation: portrait) {
+       .section7 h3,
+       h4,
+       p,
+       i {
+           font-size: xx-small;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .section7 h3,
+       h4,
+       p,
+       i {
+           font-size: large;
+       }
+   }
    /* section 8th style*/
    
    .section8 {
        background-color: black;
        padding: 50px;
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 14px;
+       grid-auto-rows: 1fr;
+   }
+   
+   @media ( width >=40em) {
+       .section8 {
+           grid-template-columns: repeat(1, 1fr);
+       }
+   }
+   
+   @media ( width >=60em) {
+       .section8 {
+           grid-template-columns: repeat(2, 1fr);
+       }
    }
    
    .section8 h3 {
@@ -715,8 +851,6 @@
        justify-self: center;
        align-items: center;
        margin-top: 30px;
-       border: 8px solid #0b3cdc;
-       border-radius: 20px;
        opacity: 0.7;
    }
    
@@ -724,12 +858,8 @@
        width: 500px;
        height: 300px;
    }
-@media (max-width: 768px) {
-    .section8 img {
-        width: 100%; 
-        height: auto;
-    }}
-   @media (max-width: 480px) {
+   
+   @media (max-width: 600px) {
        .img {
            width: 250px;
            height: 100px;
@@ -774,11 +904,27 @@
    
    .grids9 {
        display: grid;
-       grid-template-columns: repeat(3, 1fr);
        margin-top: 20px;
-       justify-self: center;
        padding: 20px;
-       gap: 30px;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 14px;
+       grid-auto-rows: 1fr;
+       margin-left: 50px;
+   }
+   
+   @media (orientation: portrait) {
+       .grids9 {
+           font-size: small;
+       }
+       .section9 h2 {
+           font-size: small;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .grids9 {
+           font-size: large;
+       }
    }
    
    .grid9 {
@@ -834,10 +980,7 @@
        .grids9 {
            grid-template-columns: repeat(1, 1fr);
            justify-self: center;
-       } .section9 {
-        padding: 20px; 
-    }
-   
+       }
    }
    
    @media (max-width: 475px) {
@@ -861,6 +1004,26 @@
    .section10 {
        background-color: black;
        padding: 50px;
+   }
+   
+   @media (orientation: portrait) {
+       .section10 h2,
+       p {
+           font-size: small;
+       }
+       .section10-container {
+           gap: 30px;
+       }
+   }
+   
+   @media (orientation: landscape) {
+       .section10 h2,
+       p {
+           font-size: large;
+       }
+       .section10-container {
+           gap: 50px;
+       }
    }
    
    .section10 i {
@@ -974,7 +1137,7 @@
        margin-top: 30px;
        margin-right: 60px;
    }
-
+   
    @media (max-width: 475px) {
        .section10 i {
            padding: 5px;
@@ -1277,10 +1440,7 @@
        .grids11-container {
            flex-direction: column;
            justify-self: center;
-       }.grid11 {
-        width: 100%; 
-        height: auto;
-    }
+       }
    }
    
    @media (max-width: 475px) {
@@ -1390,9 +1550,8 @@
            margin-left: 52%;
        }
        .section12 img {
-        width: 100%; 
-        height: auto; 
-    }
+           margin-left: 33%;
+       }
    }
    
    @media (max-width: 475px) {
@@ -1638,8 +1797,7 @@
            margin-bottom: 20px;
        }
        .section14 img {
-           display: none;  width: 100vw;
-        height: auto;
+           display: none;
        }
        .sectionsection {
            background-color: black;
@@ -2110,5 +2268,6 @@
            bottom: 80px;
        }
    }
+
 
 
