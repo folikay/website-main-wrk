@@ -239,60 +239,63 @@
         </div>
         <p>We are truly your 'one source' and it's our job to get you on operational and back on-line fast. our list <br> of services is comprehensive, and it features:</p>
 
-        <div class="grids1">
-            <div class="grid3">
-                <h3 class="secondh3">Construction</h3>
-                <p><i class="fa-solid fa-lightbulb"></i>Expert & modern systems</p>
+
+        <div class="grids11-conatiner">
+            <div class="grids1">
+                <div class="grid3">
+                    <h3 class="secondh3">Construction</h3>
+                    <p><i class="fa-solid fa-lightbulb"></i>Expert & modern systems</p>
+                </div>
+
+                <div class="grid3">
+                    <h3 class="secondh3">Machinery
+
+                    </h3>
+                    <p><i class="fa-solid fa-truck-moving"></i>Equipment relocation</p>
+
+                </div>
+                <div class="grid3">
+                    </i>
+                    <h3 class="secondh3">
+                        Predictive</h3>
+                    <p><i class="fa-solid fa-hard-hat"></i> Asset optimization</p>
+                </div>
+
+                <div class="grid3">
+                    <h3 class="secondh3">Electrical service</h3>
+                    <p><i class="fa-solid fa-history"></i>Electrical supply store</p>
+                </div>
             </div>
+            <div class="grids1">
+                <div class="grid3">
+                    </i>
+                    <h3 class="secondh3">
+                        Weld, Fabrication</h3>
+                    <p><i class="fa-solid fa-hard-hat"></i> Machine shop work</p>
+                </div>
 
-            <div class="grid3">
-                <h3 class="secondh3">Machinery
+                <div class="grid3">
+                    </i>
+                    <h3 class="secondh3">
+                        HVAC Technicians</h3>
+                    <p><i class="fa-solid fa-hard-hat"></i> Have largest Network</p>
+                </div>
 
-                </h3>
-                <p><i class="fa-solid fa-truck-moving"></i>Equipment relocation</p>
+                <div class="grid3">
+                    </i>
+                    <h3 class="secondh3">
+                        Environmental</h3>
+                    <p><i class="fa-solid fa-hard-hat"></i> Waste management</p>
+                </div>
 
-            </div>
-            <div class="grid3">
-                </i>
-                <h3 class="secondh3">
-                    Predictive</h3>
-                <p><i class="fa-solid fa-hard-hat"></i> Asset optimization</p>
-            </div>
-
-            <div class="grid3">
-                <h3 class="secondh3">Electrical service</h3>
-                <p><i class="fa-solid fa-history"></i>Electrical supply store</p>
-            </div>
-
-            <div class="grid3">
-                </i>
-                <h3 class="secondh3">
-                    Weld, Fabrication</h3>
-                <p><i class="fa-solid fa-hard-hat"></i> Machine shop work</p>
-            </div>
-
-            <div class="grid3">
-                </i>
-                <h3 class="secondh3">
-                    HVAC Technicians</h3>
-                <p><i class="fa-solid fa-hard-hat"></i> Have largest Network</p>
-            </div>
-
-            <div class="grid3">
-                </i>
-                <h3 class="secondh3">
-                    Environmental</h3>
-                <p><i class="fa-solid fa-hard-hat"></i> Waste management</p>
-            </div>
-
-            <div class="grid3">
-                </i>
-                <h3 class="secondh3">
-                    Engineering</h3>
-                <p><i class="fa-solid fa-hard-hat"></i>Cognizant technology</p>
+                <div class="grid3">
+                    </i>
+                    <h3 class="secondh3">
+                        Engineering</h3>
+                    <p><i class="fa-solid fa-hard-hat"></i>Cognizant technology</p>
+                </div>
             </div>
         </div>
-
     </section>
 
     <!--comment for my 8th section display -->
@@ -320,10 +323,12 @@
         <h1>A <b> Good Quality</b> is Not Accidental</h1>
 
         <div class="grids9">
-            <div class="grid9"> <i class="fa-solid fa-lightbulb"></i>
+            <div class="grid9">
+                <i class="fa-solid fa-lightbulb"></i>
                 <h2>Industrial <br> Factories</h2>
                 <p>wear an approved bike helment when you go bike riding</p>
                 <h4><a href="#">Learn More &rarr;</a></h4>
+
             </div>
             <div class="grid9"><i class="fa-solid fa-lightbulb"></i>
                 <h2>Experienced <br> workers</h2>
@@ -350,8 +355,8 @@
 
         <div class="section10-container">
             <div class="img-container">
-                <div class="click-zones" onclick="handleImageClick(event)">
-                    <div class="img1">
+                <div class="click-zones">
+                    <div class="img1 default">
                         <img src="halmet.jpg" id="image" alt="osafem" width="300wv" height="200hv">
                     </div>
                 </div>
@@ -550,9 +555,9 @@
                 </div>
 
             </div>
-            <button class="control left" onclick="moveSlide(-1)">❮</button>
-            <button class="control right" onclick="moveSlide(1)">❯</button>
-        </div>
+
+        </div> <button class="control left" onclick="moveSlide(-1)">❮</button>
+        <button class="control right" onclick="moveSlide(1)">❯</button>
     </section>
 
 
@@ -635,7 +640,7 @@
     <section class="sectionsection">
 
         <div class="section14">
-            <img src="section141.jpeg" alt="osafem">
+           <!-- <img src="section141.jpeg" alt="osafem">-->
         </div>
         <div class="section141">
             <div class="section140-container">
@@ -1073,22 +1078,19 @@
     });
 
     // js for image flip slant .......setion 10....
-    function handleImageClick(event) {
+
+    function handleImageMouseMove(event) {
         const image = document.getElementById('image');
         const rect = event.currentTarget.getBoundingClientRect();
         const clickX = event.clientX - rect.left;
-
-
-        image.className = 'img1';
-
-        if (clickX < rect.width / 2) {
-
-            image.classList.add('slant-left');
-        } else {
-
-            image.classList.add('slant-right');
-        }
+        image.className = 'img1 default';
+        const rotationAngle = ((clickX / rect.width) - 0.5) * 25;
+        image.style.transform = `perspective(500px) rotateY(${rotationAngle}deg) scale(1)`;
     }
+    document.querySelector('.click-zones').addEventListener('mousemove', handleImageMouseMove);
+
+
+
 
     // Optional: For my grid11 .......section11....
 
@@ -1141,3 +1143,5 @@
 </script>
 
 </html>
+</html>
+
