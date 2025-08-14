@@ -780,7 +780,7 @@ hr {
 .grids11-conatiner {
     display: flex;
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 5px;
     gap: 40px;
 }
 
@@ -2403,6 +2403,7 @@ footer a:hover {
         bottom: 80px;
     }
 }
+
 
 
 
