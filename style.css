@@ -279,7 +279,7 @@ nav {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .dropdown-menu {
         display: none;
     }
@@ -813,6 +813,10 @@ hr {
     .grids1 {
         flex-direction: column;
     }
+    .grids11-conatiner {
+        flex-direction: column;
+        gap: 1px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -831,6 +835,10 @@ hr {
     }
     .grid3 i {
         font-size: small;
+    }
+    .grids11-conatiner {
+        flex-direction: column;
+        gap: 1px;
     }
 }
 
@@ -1748,25 +1756,31 @@ hr {
 
 /* my style for section 14 */
 
-.section14 {
+.sectionsection {
+    min-height: 55vh;
+    background-image: url('section141.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section14 img {
-    width: 100vw;
-    height: 55vh;
-    opacity: 0.7;
-    display: block;
+.sectionsection {
+    color: white;
 }
 
-.section14::before {
-    content: '';
+.sectionsection::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -1778,6 +1792,8 @@ hr {
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .section141-container a:hover,
@@ -1805,21 +1821,16 @@ hr {
 .section141 {
     display: flex;
     gap: 8rem;
-    position: relative;
-    bottom: 400px;
-    left: 0;
-    right: 0;
-    justify-self: center;
-    color: white;
-    z-index: 2;
+    margin-left: 20px;
+    flex-wrap: wrap;
 }
 
 .section142-container {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .section143-container {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .map,
@@ -1848,6 +1859,8 @@ hr {
     color: #ffcd07;
     text-decoration: none;
     margin: 0 5px;
+    position: relative;
+    z-index: 2;
 }
 
 .section114 a:hover {
@@ -1888,42 +1901,10 @@ i {
     font-size: 19px;
 }
 
-.sectionsection {
-    background-color: rgb(57, 33, 33);
-    height: 55vh;
-    background-image: url('section141.jpeg');
-    object-fit: contain;
-}
-
 @media (orientation: portrait) {
     .section141-container p,
     h1,
     i {
-        font-size: 10px;
-    }
-    .section142-container p,
-    i {
-        font-size: 10px;
-    }
-    .section143-container p,
-    i {
-        font-size: 10px;
-    }
-    .section140-container p,
-    h1,
-    i {
-        font-size: 10px;
-    }
-    .section141 {
-        bottom: 350px;
-        gap: 2rem;
-    }
-}
-
-@media (orientation: landscape) {
-    .section141-container p,
-    h1,
-    i {
         font-size: 12px;
     }
     .section142-container p,
@@ -1937,21 +1918,58 @@ i {
     .section140-container p,
     h1,
     i {
-        font-size: 12px;
+        font-size: 18px;
     }
     .section141 {
-        bottom: 350px;
-        gap: 2.5rem;
+        gap: 1px;
+        bottom: 15px;
+    }
+    .sectionsection {
+        justify-self: center;
+    }
+    .section142-container {
+        margin-top: 0;
+    }
+    .section143-container {
+        margin-top: 0;
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .section141 {
+        gap: 1px;
+        justify-self: center;
+        flex-direction: column;
+        bottom: 15px;
+        font-size: 14px;
+    }
+    .sectionsection {
+        justify-self: center;
+    }
+    .section142-container {
+        margin-top: 0;
+    }
+    .section143-container {
+        margin-top: 0;
+    }
+}
 
 @media (max-width: 475px) {
     .section141 {
-        flex: 2;
-        gap: 0.5rem;
-        margin-left: 0px;
+        gap: 0;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sectionsection {
+        justify-self: center;
+    }
+    .section142-container {
+        margin-top: 0;
+    }
+    .section143-container {
+        margin-top: 0;
     }
 }
 
@@ -2033,7 +2051,7 @@ footer a:hover {
     .lastsection {
         background-color: #0b3cdc;
         display: flex;
-        gap: 3.5rem;
+        gap: 4rem;
         padding: 20px;
         position: fixed;
         bottom: 0;
@@ -2087,7 +2105,7 @@ footer a:hover {
     .lastsection {
         background-color: blue;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         padding: 20px;
         position: fixed;
@@ -2124,12 +2142,11 @@ footer a:hover {
         align-items: center;
     }
     .last1 i {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 5px;
     }
     .last1.active {
         background-color: rgba(229, 11, 11, 0.3);
-        padding: 10px;
         margin-top: -20px;
     }
 }
