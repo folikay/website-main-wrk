@@ -35,37 +35,37 @@
             <ul class="dropdown-menu">
                 <li class="hasdropdown"><a href="#">Home</a>
                     <ul class="dropdown-submenu">
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">go</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
                     </ul>
                 </li>
-                <li class="hasdropdown"><a href="#">Product</a>
+                <li class="hasdropdown"><a href="about.html">About</a>
                     <ul class="dropdown-submenu">
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">come</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
                 </li>
                 <li class="hasdropdown"><a href="#">blog</a>
                     <ul class="dropdown-submenu">
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">stay</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">blog</a></li>
                     </ul>
                 </li>
-                <li class="hasdropdown"><a href="#">page</a>
+                <li class="hasdropdown"><a href="#">blog</a>
                     <ul class="dropdown-submenu">
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">move</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">blog</a></li>
                     </ul>
                 </li>
                 <li class="hasdropdown"><a href="#">contact</a>
                     <ul class="dropdown-submenu">
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">computer</a></li>
-                        <li><a href="#">right</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">contact</a></li>
                     </ul>
                 </li>
             </ul>
@@ -97,7 +97,7 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -868,27 +868,37 @@
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     function simulateAgentResponse(messageText) {
-        if (isAgentOnline) {
-            const responseElement = document.createElement('div');
-            responseElement.className = 'message incoming';
-            responseElement.innerHTML = `
-            <div>Received: ${messageText}. How can I assist you further?</div>
-            <div class="timestamp">Just now</div>
-        `;
-            chatMessages.appendChild(responseElement);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        } else {
-            // Optionally, you can handle the case when the agent is offline
-            const responseElement = document.createElement('div');
-            responseElement.className = 'message incoming';
-            responseElement.innerHTML = `
-            <div>Sorry, I am currently offline. Please leave a message.</div>
-            <div class="timestamp">Just now</div>
-        `;
-            chatMessages.appendChild(responseElement);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
+        let response = "I'm not sure I understand. Can you please clarify your question?";
+        const lowerText = messageText.toLowerCase();
+
+        // Simple keyword-based response logic
+        if (lowerText.includes("hello") || lowerText.includes("hi")) {
+            response = "Hello! How can I assist you today?";
+        } else if (lowerText.includes("company") || lowerText.includes("about")) {
+            response = "We are Osamfem Industrial Solutions, specializing in industrial engineering and equipment relocation.";
+        } else if (lowerText.includes("price") || lowerText.includes("cost")) {
+            response = "Our pricing depends on your project needs. Would you like a quote?";
+        } else if (lowerText.includes("hours") || lowerText.includes("working hours")) {
+            response = "Our working hours are Monday to Friday, 9 AM to 5 PM.";
+        } else if (lowerText.includes("location") || lowerText.includes("address")) {
+            response = "Our office is located at Plot 4, Ilorin.";
+        } else if (lowerText.includes("services")) {
+            response = "We offer industrial engineering, equipment relocation, and more.";
+        } else if (lowerText.includes("contact")) {
+            response = "You can reach us at +234-810-669-909 or email graceoluwakunmi@gmail.com.";
         }
+
+        const responseElement = document.createElement('div');
+        responseElement.className = 'message incoming';
+        responseElement.innerHTML = `
+        <div>${response}</div>
+        <div class="timestamp">Just now</div>
+    `;
+        chatMessages.appendChild(responseElement);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
     }
+
+
 
 
 
