@@ -2226,7 +2226,7 @@ footer a:hover {
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 8px;
-    background: #f8f9fa;
+    background: black;
 }
 
 .message {
@@ -2239,7 +2239,7 @@ footer a:hover {
 }
 
 .incoming {
-    background: #e9ecef;
+    background: gray;
     align-self: flex-start;
     margin-right: auto;
 }
@@ -2297,7 +2297,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     margin-top: 5px;
-    color: #6088ac;
+    color: black;
     font-size: 12px;
 }
 
@@ -2403,7 +2403,6 @@ footer a:hover {
         bottom: 80px;
     }
 }
-
 
 
 
