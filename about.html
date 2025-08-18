@@ -34,16 +34,16 @@
         <nav>
 
             <ul class="dropdown-menu">
-                <li class="hasdropdown"><a href="index.html">Home</a>
+                <li class="hasdropdown"><a href="#">Home</a>
                     <ul class="dropdown-submenu">
-                        <li><a href="#">home</a></li>
+                        <li><a href="index.html">home</a></li>
                         <li><a href="#">home</a></li>
                         <li><a href="#">home</a></li>
                     </ul>
                 </li>
-                <li class="hasdropdown"><a href="about.html">About</a>
+                <li class="hasdropdown"><a href="#">About</a>
                     <ul class="dropdown-submenu">
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">About</a></li>
                     </ul>
@@ -133,7 +133,7 @@
             <div class="extra-container">
                 <div class="section7icon"><img src="logo.jpg" alt="osafem" width="100wv" height="100hv">
                 </div>
-                <p>Who we are...</p>
+                <p class="para">Who we are...</p>
                 <h1>About Our Industrial Company</h1>
                 <p>folikay Compliance Safety Ltd. is a health & safety industry leader. Our safety specialists offer experience and knowledge of Occupational Health & Safety Legislation.</p>
 
@@ -156,6 +156,49 @@
             </div>
         </div>
     </section>
+
+    <section class="section3">
+        <div class="section3-container">
+
+            <div class="grids">
+                <div class="section7icon"><img src="logo.jpg" alt="osafem" width="100wv" height="100hv">
+                </div>
+                <p class="parah">Who we are...</p>
+                <h1>Our Mission, What Can <b> We Do?</b></h1>
+                <h4>Who we works ... Our Mission, What Can We Do? Xtra Compliance Safety Ltd. is a health & safety industry leader. <br> Our safety specialists offer experience and knowledge of Occupational Health & Safety Legislation.
+                </h4>
+                <div class="grid2">
+                    <h3 class="myfirsth3"><i class="fa-solid fa-lightbulb"></i><u>industrial ideas</u></h3>
+                    <p>ignoring a warning can <br> cause much mourning</p>
+                </div>
+
+                <div class="grid2">
+                    <h3 class="myfirsth3"><i class="fa-solid fa-truck-moving"></i><u>Modern Equipment</u>
+
+                    </h3>
+                    <p>Life did not begin by accident.<br> don't end it as one</p>
+
+                </div>
+                <div class="grid2">
+                    </i>
+                    <h3 class="myfirsth3">
+                        <i class="fa-solid fa-hard-hat"></i> <u> Expert Enginners</u></h3>
+                    <p> if you're going to be stupid, <br>you have to be tough </p>
+                </div>
+                <div class="grid2">
+                    <h3 class="myfirsth3"><i class="fa-solid fa-history"></i><u>Projects Support</u></h3>
+                    <p>make your plant the best, <br> safer than all the rest</p>
+                </div>
+
+            </div>
+            <div class="section3-image">
+                <img src="section2.jpeg" alt="osafem">
+            </div>
+
+        </div>
+        </div>
+
+    </section>
 </body>
 
 
@@ -169,7 +212,15 @@
     });
 
 
-    // js for image flip slant .......setion 2....
+    // section 3 wow zoom-in effect
+    window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            const img = document.querySelector('.section3-image');
+            if (img) {
+                img.classList.add('show');
+            }
+        }, 1000);
+    });
 </script>
 
 </html>
