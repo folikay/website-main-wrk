@@ -686,3 +686,144 @@ nav {
         margin-left: 30px;
     }
 }
+
+
+/* section 10 style*/
+
+.section4 {
+    background-color: white;
+    padding: 50px;
+}
+
+@media (orientation: portrait) {
+    .section4 p {
+        font-size: small;
+    }
+    .section4-container {
+        gap: 50px;
+    }
+}
+
+@media (orientation: landscape) {
+    .section4 p {
+        font-size: large;
+    }
+    .section4-container {
+        gap: 250px;
+    }
+}
+
+.section4 p {
+    color: rgba(29, 28, 28, 0.4);
+    margin-left: 90px;
+}
+
+.accordion-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+@media (max-width: 475px) {
+    .section4 p {
+        font-size: small;
+        margin-left: 50px;
+    }
+    .section4-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img4 img {
+        justify-self: center;
+        width: 100%;
+        height: auto;
+    }
+    .accordion-container {
+        order: 1;
+    }
+    .img4 {
+        order: 2;
+    }
+}
+
+.img4 {
+    transition: transform 0.3s ease;
+}
+
+.img4 img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.accordion-item {
+    background-color: var(--header-bg);
+    background-color: #7B4019;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-header {
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color var(--transition-duration) ease;
+}
+
+.accordion-header:hover {
+    color: var(--accent-color);
+}
+
+.accordion-icon {
+    font-weight: bold;
+    transition: transform var(--transition-duration) ease;
+    font-size: 1.5rem;
+}
+
+.accordion-content {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-duration) ease;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.accordion-content-inner {
+    padding: 0.5rem 0 1.5rem;
+}
+
+.section4 hr {
+    min-width: 20px;
+    max-width: 100%;
+    border: none;
+    border-top: 2px solid rgb(176, 164, 164);
+    margin-top: -5px;
+}
+
+.section4-container {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .section4-container {
+        flex-direction: column;
+    }
+    .accordion-container {
+        order: 1;
+    }
+    .img4 {
+        order: 2;
+    }
+}
+    }
+}
+
