@@ -202,6 +202,93 @@
         </div>
 
     </section>
+
+
+    <!--section 4...-->
+
+    <section class="section4">
+
+        <div class="section4-container">
+            <div class="img4 default">
+                <img src="halmet.jpg" id="image" alt="osafem">
+            </div>
+
+            <!-- js, css, html dropdown -->
+
+
+            <div class="accordion-container">
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>System Requirements</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <hr>
+                            <br>
+                            <p>To use our platform effectively, ensure your system meets these requirements:</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
 </body>
 
 
@@ -224,7 +311,64 @@
             }
         }, 1000);
     });
+
+    //js accordion dropdown .... section 10.....
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all accordion headers
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        // Add click event listeners to each header
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const accordionItem = this.parentElement;
+                const accordionContent = this.nextElementSibling;
+                const accordionIcon = this.querySelector('.accordion-icon');
+
+                // Toggle the active class
+                accordionItem.classList.toggle('active');
+
+                // Toggle the content visibility with smooth animation and chnager of headr color
+                if (accordionItem.classList.contains('active')) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                    accordionContent.style.color = 'white';
+                    accordionIcon.textContent = '-';
+                    accordionIcon.style.color = '#7B4019';
+
+                    // change bacground color when click
+
+                    accordionItem.style.backgroundColor = '#333';
+
+
+                } else {
+                    accordionContent.style.maxHeight = '0';
+                    accordionIcon.textContent = '+';
+                    accordionIcon.style.color = '';
+
+                    // change bacground color back to original color
+
+                    accordionItem.style.backgroundColor = '';
+
+                }
+
+
+
+                // Close other open accordion items
+                if (accordionItem.classList.contains('active')) {
+                    document.querySelectorAll('.accordion-item').forEach(item => {
+                        if (item !== accordionItem && item.classList.contains('active')) {
+                            item.classList.remove('active');
+                            item.querySelector('.accordion-content').style.maxHeight = '0';
+                            item.querySelector('.accordion-icon').textContent = '+';
+                            item.querySelector('.accordion-icon').style.color = '';
+                            // change bacground color back to original color
+                            item.style.backgroundColor = '';
+                        }
+                    });
+                }
+            });
+        });
+    });
 </script>
 
 </html>
-
