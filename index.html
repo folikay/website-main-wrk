@@ -873,8 +873,10 @@
         const lowerText = messageText.toLowerCase();
 
         // Simple keyword-based response logic
-        if (lowerText.includes("hello") || lowerText.includes("hi")) {
+      if (lowerText.includes("hello") || lowerText.includes("hi") || lowerText.includes("hey")) {
             response = "Hello! How can I assist you today?";
+        } else if (lowerText.includes("yes") || lowerText.includes("ok")) {
+            response = "1.about us 2.our services 3.contact us 4.our location 5.our price. enter your choice with format (e.g about us...) or type 'no' to exit.";
         } else if (lowerText.includes("company") || lowerText.includes("about")) {
             response = "We are Osamfem Industrial Solutions, specializing in industrial engineering and equipment relocation.";
         } else if (lowerText.includes("price") || lowerText.includes("cost")) {
@@ -883,10 +885,12 @@
             response = "Our working hours are Monday to Friday, 9 AM to 5 PM.";
         } else if (lowerText.includes("location") || lowerText.includes("address")) {
             response = "Our office is located at Plot 4, Ilorin.";
-        } else if (lowerText.includes("services")) {
+        } else if (lowerText.includes("services") || lowerText.includes("what do you offer")) {
             response = "We offer industrial engineering, equipment relocation, and more.";
-        } else if (lowerText.includes("contact")) {
+        } else if (lowerText.includes("contact us") || lowerText.includes("get in touch")) {
             response = "You can reach us at +234-810-669-909 or email graceoluwakunmi@gmail.com.";
+        } else if (lowerText.includes("no") || lowerText.includes("that's all") || lowerText.includes("nothing")) {
+            response = "Thank you for checking our page.";
         }
 
         const responseElement = document.createElement('div');
@@ -1152,3 +1156,4 @@
 </script>
 
 </html>
+
