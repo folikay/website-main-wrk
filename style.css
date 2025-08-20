@@ -25,7 +25,8 @@ body {
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: rgb(11, 11, 11);
+    /*background-color: rgb(11, 11, 11);*/
+    background-color: #7B4019;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
@@ -40,7 +41,7 @@ body {
 }
 
 .icon a {
-    color: #3f60c9;
+    color: #FFBF78;
 }
 
 .icon1 a:hover {
@@ -53,7 +54,7 @@ body {
 }
 
 .icon1 a {
-    color: #1238b5;
+    color: #FFBF78;
 }
 
 .icon a:hover {
@@ -103,7 +104,8 @@ nav {
     position: fixed;
     top: 80px;
     width: 100%;
-    background-color: rgb(57, 33, 33);
+    /* background-color: rgb(57, 33, 33);*/
+    background-color: #FF7D29;
     font-size: smaller;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -521,7 +523,8 @@ nav {
 /*style for my third section*/
 
 .section3-container {
-    background-color: rgb(57, 33, 33);
+    /*background-color: rgb(57, 33, 33);*/
+    background-color: #FF7D29;
     color: white;
     padding: 50px;
 }
@@ -588,7 +591,8 @@ hr {
 
 .section4-container {
     color: white;
-    background-color: #0b3cdc;
+    /* background-color: #0b3cdc;*/
+    background-color: #FFBF78;
     padding: 50px;
 }
 
@@ -640,21 +644,22 @@ hr {
 /*section 5 style*/
 
 .section5icon p {
-    color: white;
+    color: black;
     margin-top: -28px;
 }
 
 .section5icon h1 {
-    color: white;
+    color: black;
 }
 
 .section5icon h4 {
-    color: rgba(187, 175, 175, 0.5);
+    color: rgba(51, 48, 48, 0.5);
     margin-top: 20px;
 }
 
 .section5 {
-    background-color: black;
+    /*background-color: black;*/
+    background-color: #FFEEA9;
     padding: 50px;
     justify-content: center;
     text-align: center;
@@ -680,7 +685,8 @@ hr {
 /*section 6 style */
 
 .section6-container {
-    background-color: rgb(57, 33, 33);
+    /* background-color: rgb(57, 33, 33);*/
+    background-color: #FF7D29;
     padding: 50px;
 }
 
@@ -740,26 +746,27 @@ hr {
 }
 
 .section7 {
-    background-color: black;
+    /*background-color: black;*/
+    background-color: #FFEEA9;
     padding: 50px;
 }
 
 .section7 h4 {
-    color: rgba(187, 175, 175, 0.5);
+    color: rgba(56, 52, 52, 0.5);
     margin-left: 5px;
 }
 
 .section7 h1 {
-    color: white;
+    color: black;
     margin-left: 5px;
 }
 
 .section7extra i {
-    color: yellow;
+    color: #FF7D29;
 }
 
 .section7 p {
-    color: white;
+    color: black;
     margin: 10px 20px;
 }
 
@@ -790,10 +797,10 @@ hr {
 
 .grid3 i {
     border-radius: 50px;
-    border: 2px solid rgb(57, 33, 33);
+    border: 2px solid #FF7D29;
     padding: 15px;
     font-size: 2rem;
-    background-color: rgb(57, 33, 33);
+    background-color: #FF7D29;
     margin-right: 20px;
 }
 
@@ -803,7 +810,7 @@ hr {
     }*/
 
 .secondh3 {
-    color: white;
+    color: black;
     margin-left: 100px;
     margin-top: 20px;
     margin-bottom: -30px;
@@ -868,7 +875,7 @@ hr {
 /* section 8th style*/
 
 .section8 {
-    background-color: black;
+    background-color: #FFEEA9;
     padding: 50px;
     display: grid;
     grid-template-columns: 1fr;
@@ -901,21 +908,21 @@ hr {
 }
 
 .section8 h3 {
-    color: white;
+    color: black;
     margin-left: 5px;
 }
 
 .section8 h1 {
-    color: white;
+    color: black;
     margin-left: 5px;
 }
 
 .section8 b {
-    color: #1544df;
+    color: #FF7D29;
 }
 
 .section8 p {
-    color: rgba(250, 244, 244, 0.8);
+    color: rgba(40, 38, 38, 0.7);
     margin: 10px 20px;
     font-size: larger;
 }
@@ -925,6 +932,17 @@ hr {
     align-items: center;
     margin-top: 30px;
     opacity: 0.7;
+}
+
+.section8 img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .section8 img {
@@ -959,21 +977,21 @@ hr {
 /*section 9 style*/
 
 .section9 {
-    background-color: #0b3cdc;
+    background-color: #FFBF78;
     padding: 50px;
 }
 
 .section9 h1 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
 .section9 b {
-    color: yellow;
+    color: #FF7D29;
 }
 
 .section9 p {
-    color: rgba(250, 244, 244, 0.8);
+    color: rgba(39, 36, 36, 0.7);
     text-align: center;
 }
 
@@ -1032,12 +1050,12 @@ hr {
 }
 
 .section9 h2 {
-    color: white;
+    color: #7B4019;
     margin-top: 20px;
 }
 
 .grid9 p {
-    color: rgba(247, 237, 237, 0.5);
+    color: rgba(70, 62, 62, 0.5);
     margin-top: 20px;
 }
 
@@ -1048,7 +1066,7 @@ hr {
 
 .grid9 a {
     text-decoration: none;
-    color: rgb(115, 161, 241);
+    color: #7B4019;
     /* background-color: rgb(57, 33, 33);
        border: 1px solidrgb(57, 33, 33);
        padding: 4px;*/
@@ -1088,7 +1106,7 @@ hr {
 /* section 10 style*/
 
 .section10 {
-    background-color: black;
+    background-color: #FFEEA9;
     padding: 50px;
 }
 
@@ -1115,20 +1133,20 @@ hr {
 .section10 i {
     padding: 10px;
     font-size: 2rem;
-    color: rgb(115, 161, 241);
+    color: #FF7D29;
     margin-right: 20px;
 }
 
 .section10 h2 {
-    color: white;
+    color: black;
 }
 
 .section10 b {
-    color: rgb(115, 161, 241);
+    color: #FF7D29;
 }
 
 .section10 p {
-    color: rgba(250, 244, 244, 0.4);
+    color: rgba(29, 28, 28, 0.4);
     margin-left: 90px;
 }
 
@@ -1139,8 +1157,8 @@ hr {
 
 .section10icon a {
     text-decoration: none;
-    color: rgb(115, 161, 241);
-    background-color: rgb(57, 33, 33);
+    color: #FF7D29;
+    background-color: #7B4019;
     border: 1px solidrgb(57, 33, 33);
     padding: 10px;
 }
@@ -1252,7 +1270,7 @@ hr {
 
 .accordion-item {
     background-color: var(--header-bg);
-    background-color: #0b3cdc;
+    background-color: #7B4019;
     border-radius: 8px;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -1391,19 +1409,19 @@ hr {
 /* section 11*/
 
 .section11 {
-    background-color: black;
+    background-color: #FFEEA9;
     padding: 50px;
 }
 
 .section11 h1 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: xx-large;
     margin-top: 20px;
 }
 
 .section11 p {
-    color: rgba(250, 244, 244, 0.8);
+    color: rgba(47, 42, 42, 0.8);
     text-align: center;
 }
 
@@ -1427,11 +1445,11 @@ hr {
 
 .grid11:hover {
     transform: translateY(-5px);
-    background-color: rgba(56, 53, 53, 0.2);
+    background-color: rgba(47, 42, 42, 0.2);
 }
 
 .grid11 p {
-    color: white;
+    color: black;
     text-align: center;
     margin-top: -3px;
 }
@@ -1524,7 +1542,7 @@ hr {
 .grid11:hover .gallery-title {
     opacity: 1;
     transform: translateY(0);
-    background-color: blue;
+    background-color: #7B4019;
 }
 
 @media (max-width: 768px) {
@@ -1560,13 +1578,13 @@ hr {
 /* section 12 style.....*/
 
 .section12 {
-    background-color: #0b3cdc;
+    background-color: #FFBF78;
     padding: 50px;
     position: relative;
 }
 
 .section12 i {
-    color: yellow;
+    color: #7B4019;
     font-size: 6rem;
     margin-left: 50%;
 }
@@ -1594,7 +1612,7 @@ hr {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(59, 54, 54, 0.7);
     border: none;
     cursor: pointer;
     font-size: 24px;
@@ -1610,18 +1628,22 @@ hr {
 }
 
 .section12 h3 {
-    color: white;
+    color: black;
     font-size: 2rem;
 }
 
 .section12 p {
-    color: white;
+    color: black;
     margin-left: 50%;
     font-size: x-large;
 }
 
+button {
+    color: white;
+}
+
 .section12 h6 {
-    color: #f8d64e;
+    color: #7B4019;
     margin-left: 48%;
     font-size: x-large;
 }
@@ -1667,17 +1689,17 @@ hr {
 /* style for section 13 */
 
 .section13 {
-    background-color: rgb(57, 33, 33);
+    background-color: #FF7D29;
     padding: 30px;
 }
 
 .section13 i {
-    color: white;
+    color: black;
     font-size: 4rem;
 }
 
 .section13 h3 {
-    color: white;
+    color: black;
     font-size: 1rem;
     margin-left: 80px;
     margin-top: -60px;
@@ -1685,7 +1707,7 @@ hr {
 
 .section13 p {
     margin-left: 80px;
-    color: white;
+    color: black;
     font-size: smaller;
 }
 
@@ -1727,12 +1749,12 @@ hr {
 
 .slides13::before {
     left: 0;
-    background: linear-gradient(90deg, rgba(57, 33, 33, 0.7), transparent);
+    background: linear-gradient(90deg, rgba(253, 132, 19, 0.996), transparent);
 }
 
 .slides13::after {
     right: 0;
-    background: linear-gradient(90deg, transparent, rgba(57, 33, 33, 0.7));
+    background: linear-gradient(90deg, transparent, rgba(253, 132, 19, 0.996));
 }
 
 .minislide-container {
@@ -1868,8 +1890,8 @@ hr {
 }
 
 .section114 a:hover i {
-    border-color: blue;
-    background-color: blue;
+    border-color: #7B4019;
+    background-color: #7B4019;
     transform: translateX(-7px);
 }
 
@@ -1977,7 +1999,7 @@ i {
 /* my syle for section 15*/
 
 footer {
-    background-color: #0b3cdc;
+    background-color: #FFBF78;
     color: white;
     font-style: italic;
     text-align: center;
@@ -1987,7 +2009,7 @@ footer {
 }
 
 footer a {
-    color: #ffcd07;
+    color: #7B4019;
     text-decoration: none;
     margin: 0 5px;
 }
@@ -2002,7 +2024,7 @@ footer a:hover {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #0b3cdc;
+    background-color: #7B4019;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -2021,7 +2043,7 @@ footer a:hover {
 }
 
 .scroll-to-top:hover {
-    background-color: rgb(57, 33, 33);
+    background-color: #FF7D29;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -2033,8 +2055,8 @@ footer a:hover {
 .arrow-icon {
     width: 20px;
     height: 20px;
-    border-left: 4px solid white;
-    border-top: 4px solid white;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
     transform: rotate(45deg);
     margin-top: 5px;
 }
@@ -2049,7 +2071,7 @@ footer a:hover {
         font-size: xx-small;
     }
     .lastsection {
-        background-color: #0b3cdc;
+        background-color: #FFEEA9;
         display: flex;
         gap: 4rem;
         padding: 20px;
@@ -2062,7 +2084,7 @@ footer a:hover {
         height: 20vh;
     }
     .lastsection i {
-        color: white;
+        color: black;
         margin-left: 10px;
     }
     .last1 {
@@ -2076,7 +2098,7 @@ footer a:hover {
     }
     .last1 :hover {
         transform: translateY(-7px);
-        color: blue;
+        color: #FFBF78;
         box-shadow: 5px 30px 50px rgba(33, 32, 32, 0.15);
     }
     .last1 a {
@@ -2091,7 +2113,7 @@ footer a:hover {
         margin-bottom: 5px;
     }
     .last1.active {
-        background-color: rgba(229, 11, 11, 0.3);
+        background-color: #FF7D29;
         padding: 10px;
         margin-top: -20px;
     }
@@ -2103,7 +2125,7 @@ footer a:hover {
         font-size: xx-small;
     }
     .lastsection {
-        background-color: blue;
+        background-color: #FFEEA9;
         display: flex;
         gap: 1rem;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -2117,7 +2139,7 @@ footer a:hover {
         height: 20vh;
     }
     .lastsection i {
-        color: white;
+        color: black;
         margin-left: 10px;
     }
     .last1 {
@@ -2131,7 +2153,7 @@ footer a:hover {
     }
     .last1 :hover {
         transform: translateY(-7px);
-        color: blue;
+        color: #FFBF78;
         box-shadow: 5px 30px 50px rgba(33, 32, 32, 0.15);
     }
     .last1 a {
@@ -2146,7 +2168,7 @@ footer a:hover {
         margin-bottom: 5px;
     }
     .last1.active {
-        background-color: rgba(229, 11, 11, 0.3);
+        background-color: rgba(229, 105, 11, 0.921);
         margin-top: -20px;
     }
 }
@@ -2166,7 +2188,7 @@ footer a:hover {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #0d34e2;
+    background: #7B4019;
     color: white;
     display: flex;
     justify-content: center;
@@ -2272,7 +2294,7 @@ footer a:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #4361ee;
+    background: #7B4019;
     color: white;
     display: flex;
     justify-content: center;
@@ -2285,7 +2307,7 @@ footer a:hover {
 }
 
 .send-button:hover {
-    background: #3a56d4;
+    background: #FF7D29;
     transform: scale(1.05);
 }
 
@@ -2403,7 +2425,6 @@ footer a:hover {
         bottom: 80px;
     }
 }
-
 
 
 
