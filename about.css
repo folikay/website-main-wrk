@@ -25,7 +25,8 @@ body {
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: rgb(11, 11, 11);
+    /*background-color: rgb(11, 11, 11);*/
+    background-color: #7B4019;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
@@ -40,7 +41,7 @@ body {
 }
 
 .icon a {
-    color: #3f60c9;
+    color: #FFBF78;
 }
 
 .icon1 a:hover {
@@ -53,7 +54,7 @@ body {
 }
 
 .icon1 a {
-    color: #1238b5;
+    color: #FFBF78;
 }
 
 .icon a:hover {
@@ -103,7 +104,8 @@ nav {
     position: fixed;
     top: 80px;
     width: 100%;
-    background-color: rgb(57, 33, 33);
+    /* background-color: rgb(57, 33, 33);*/
+    background-color: #FF7D29;
     font-size: smaller;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -383,7 +385,7 @@ nav {
     font-size: x-large;
     border: 1px;
     border-radius: 50%;
-    background-color: rgb(32, 32, 165);
+    background-color: #7B4019;
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -406,7 +408,7 @@ nav {
 }
 
 .extra-container h1 {
-    color: rgb(32, 32, 165);
+    color: #7B4019;
 }
 
 .extra-container p {
@@ -512,7 +514,7 @@ nav {
 /*section 3 style*/
 
 .section3 {
-    background-color: rgb(45, 45, 201);
+    background-color: #FF7D29;
     padding: 50px;
     width: 100%;
 }
@@ -527,13 +529,13 @@ nav {
 }
 
 .section3 h4 {
-    color: rgba(238, 235, 235, 0.5);
+    color: rgba(59, 53, 53, 0.5);
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .parah {
-    color: rgba(238, 235, 235, 0.5);
+    color: rgba(52, 49, 49, 0.5);
 }
 
 .section3-image {
@@ -599,8 +601,4 @@ nav {
         object-fit: cover;
         justify-self: center;
     }
-}
-        flex-direction: column;
-    }
-
 }
