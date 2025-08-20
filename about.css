@@ -563,6 +563,42 @@ nav {
     gap: 30px;
 }
 
+.grid22 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    color: white;
+}
+
+.grid2 i {
+    font-size: 2.5rem;
+    margin-right: 30px;
+}
+
+.grid2 h3 {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.grid2 p {
+    margin-top: -40px;
+    margin-left: 60px;
+}
+
+.gri {
+    transition: all 0.5s ease;
+}
+
+.gri:hover {
+    color: yellow;
+}
+
+.gri:hover i {
+    transform: rotateY(180deg);
+    color: yellow;
+}
+
 @media (max-width: 475px) {
     .section3-container {
         flex-direction: column;
@@ -574,6 +610,22 @@ nav {
         height: 200px;
         object-fit: cover;
         justify-self: center;
+    }
+    .grid22 {
+        gap: 15px;
+    }
+    .grid2 i {
+        font-size: 1.5rem;
+        margin-right: 5px;
+    }
+    .grid2 h3 {
+        font-size: small;
+        margin-left: 30px;
+    }
+    .grid2 p {
+        font-size: small;
+        margin-top: -20px;
+        margin-left: 30px;
     }
 }
 
@@ -589,6 +641,22 @@ nav {
         object-fit: cover;
         justify-self: center;
     }
+    .grid22 {
+        gap: 15px;
+    }
+    .grid2 i {
+        font-size: 2rem;
+        margin-right: 5px;
+    }
+    .grid2 h3 {
+        font-size: small;
+        margin-left: 30px;
+    }
+    .grid2 p {
+        font-size: small;
+        margin-top: -20px;
+        margin-left: 30px;
+    }
 }
 
 @media (orientation: portrait) {
@@ -600,5 +668,21 @@ nav {
         height: 200px;
         object-fit: cover;
         justify-self: center;
+    }
+    .grid22 {
+        gap: 15px;
+    }
+    .grid2 i {
+        font-size: 1.5rem;
+        margin-right: 5px;
+    }
+    .grid2 h3 {
+        font-size: small;
+        margin-left: 30px;
+    }
+    .grid2 p {
+        font-size: small;
+        margin-top: -20px;
+        margin-left: 30px;
     }
 }
