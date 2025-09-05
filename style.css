@@ -2127,7 +2127,7 @@ footer a:hover {
     .lastsection {
         background-color: #FFEEA9;
         display: flex;
-        gap: 1rem;
+        gap: 0.5rem;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         padding: 20px;
         position: fixed;
@@ -2140,7 +2140,7 @@ footer a:hover {
     }
     .lastsection i {
         color: black;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .last1 {
         cursor: pointer;
@@ -2425,6 +2425,7 @@ footer a:hover {
         bottom: 80px;
     }
 }
+
 
 
 
