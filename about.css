@@ -1045,16 +1045,20 @@ h3 {
     }
 }
 
-.section7 img {
-    margin-top: -80px;
+.section7-image img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    justify-self: center;
+    margin-top: 120px;
 }
 
 .progress-container {
-    margin-bottom: 40px;
+    margin-bottom: 2px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 20px;
+    padding: 5px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
     width: 100%;
@@ -1123,19 +1127,23 @@ h3 {
 }
 
 .progress-label {
-    margin-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 15px;
     font-size: 14px;
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     animation: pulse 2s infinite alternate;
+    margin-bottom: 0;
+    z-index: 2;
 }
 
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        transform: scale(0.5);
     }
     100% {
-        transform: scale(1.05);
+        transform: scale(1);
     }
 }
 
@@ -1143,15 +1151,17 @@ h3 {
     .section7-container {
         flex-direction: column;
         justify-self: center;
+        gap: 100px;
     }
-    .seconddiv img {
-        width: 300px;
+    .section7-image img {
+        width: 250px;
         height: 200px;
         margin-right: 40px;
+        margin-top: 2px;
     }
     .progress-container {
-        padding: 10px;
-        width: 90%;
+        padding: 2px;
+        width: 85%;
         max-width: 400px;
         font-size: small;
     }
@@ -1161,13 +1171,14 @@ h3 {
     .section7-container {
         flex-direction: column;
         justify-self: center;
+        gap: 150px;
     }
-    .seconddiv img {
+    .section7-image img {
         width: 400px;
         height: auto;
     }
     .progress-container {
-        padding: 10px;
+        padding: 2px;
         width: 90%;
         max-width: 400px;
         font-size: small;
@@ -1176,13 +1187,17 @@ h3 {
 
 @media (orientation: portrait) {
     .section7-container {
-        gap: 150px;
+        gap: 100px;
     }
     .progress-container {
-        padding: 10px;
-        width: 90%;
+        padding: 1px;
+        width: 85%;
         max-width: 400px;
         font-size: small;
+    }
+    .section7-image img {
+        width: 250px;
+        height: 200px;
     }
 }
 
@@ -1538,7 +1553,7 @@ footer a:hover {
     .lastsection {
         background-color: #FFEEA9;
         display: flex;
-        gap: 1rem;
+        gap: 0.5rem;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         padding: 20px;
         position: fixed;
@@ -1551,7 +1566,7 @@ footer a:hover {
     }
     .lastsection i {
         color: black;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .last1 {
         cursor: pointer;
