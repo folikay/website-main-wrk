@@ -99,10 +99,35 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="#">blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
 
     </section>
+
+
+    <!--section 1...-->
+
+
+    <section class="moreabout">
+        <div class="moreabout-container">
+            <h1>About Us</h1>
+            <p><i class="fa-solid fa-house"></i>&rarr; <i>our services</i></p>
+        </div>
+    </section>
+</body>
+
+
+<script>
+    //Optional: You can add JavaScript to handle the select dropdown change ...section 1...
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</html>
