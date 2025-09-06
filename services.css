@@ -353,7 +353,7 @@
      margin-bottom: 20px;
  }
  
-@media (orientation: portrait) {
+ @media (orientation: portrait) {
      .moreabout {
          min-height: 50vh;
      }
@@ -370,3 +370,129 @@
          font-size: 2rem;
      }
  }
+ /* scetion 2 style */
+ 
+ .section2-container {
+     margin-top: 20px;
+     padding: 30px;
+ }
+ 
+ .section2icon {
+     justify-self: center;
+ }
+ 
+ .section2 h4 {
+     justify-self: center;
+     color: rgb(50, 46, 46);
+ }
+ 
+ .section2 h1 {
+     justify-self: center;
+     color: rgb(17, 17, 17);
+     font-size: 3rem;
+ }
+ 
+ .section2 p {
+     justify-self: center;
+     color: rgba(50, 46, 46, 0.5);
+ }
+ 
+ .grid i {
+     border: 1px solid black;
+     padding: 20px;
+     margin-left: 90px;
+     font-size: 4rem;
+     margin-top: 20px;
+     padding: 20px;
+     transition: background 0.3s, color 0.3s, transform 0.5s;
+ }
+ 
+ .grid h1 {
+     justify-self: center;
+ }
+ 
+ .grid {
+     margin-top: 40px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     justify-items: center;
+     align-items: center;
+     height: 300px;
+     transition: all 0.5s ease;
+ }
+ /*.grid i:hover {
+     background-color: #7B4019;
+     color: #FF7D29;
+ }
+ 
+ .grid1:hover {
+     background-color: #FF7D29;
+ }
+ 
+ .grid1:hover i:hover {
+     transform: rotateY(180deg);
+ }*/
+ /*.grid1:hover,
+ .grid1:hover i,
+ .grid1 i:hover {
+     background-color: #FF7D29;
+     color: #FFBF78;
+ }
+ 
+ .grid i:hover {
+     background-color: #7B4019;
+ }
+ 
+ .grid1:hover i,
+ .grid1 i:hover {
+     transform: rotateY(180deg);
+     transition: transform 0.5s;
+ }*/
+ 
+ .grid1 {
+     background-color: white;
+     transition: background 0.2s;
+ }
+ 
+ .grid1:hover {
+     background-color: #FF7D29;
+     transform: scale(1.08);
+ }
+ 
+ .grid1:hover i,
+ .grid1 i:hover {
+     background-color: #7B4019;
+     color: #FFBF78;
+     transform: rotateY(180deg);
+ }
+ 
+ @media (max-width: 470px) {
+     .grid {
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .section2 h1 {
+         font-size: 2rem;
+     }
+ }
+ 
+ @media (max-width: 700px) {
+     .grid {
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .section2 h1 {
+         font-size: 2rem;
+     }
+ }
+ 
+ @media (orientation: portrait) {
+     .grid {
+         grid-template-columns: auto;
+     }
+     .section2 h1 {
+         font-size: 2rem;
+     }
+ }
+     }
+ }
+
