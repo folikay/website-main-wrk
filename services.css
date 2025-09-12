@@ -591,3 +591,16 @@
          width: fit-content;
      }
  }
+@media (max-width: 700px) {
+     .section3 {
+         min-height: 50vh;
+         margin-top: 1200px;
+         position: relative;
+     }
+     .section3-btn {
+         font-size: 1.5rem;
+         padding: 5px 10px;
+         width: fit-content;
+     }
+ }
+
