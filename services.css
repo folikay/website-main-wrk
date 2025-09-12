@@ -582,7 +582,7 @@
  @media (max-width: 470px) {
      .section3 {
          min-height: 50vh;
-         margin-top: 1200px;
+         margin-top: 1250px;
          position: relative;
      }
      .section3-btn {
@@ -594,7 +594,7 @@
 @media (max-width: 900px) {
      .section3 {
          min-height: 50vh;
-         margin-top: 1200px;
+         margin-top: 1250px;
          position: relative;
      }
      .section3-btn {
@@ -603,5 +603,6 @@
          width: fit-content;
      }
  }
+
 
 
