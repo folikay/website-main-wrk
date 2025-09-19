@@ -496,7 +496,7 @@
  /*section 3 style*/
  
  .section3 {
-     background-image: url('service.jpg');
+     background-image: url('section1.jgep.png');
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
@@ -1511,6 +1511,7 @@
          bottom: 80px;
      }
  }
+
 
 
 
